@@ -1,0 +1,109 @@
+@media (max-width: 1350px) {
+    .catalog h1{
+        width: max-content;
+        margin: auto;
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 1250px) {
+    .burger{
+        display: flex;
+        visibility: visible;
+        justify-content: center;
+    }
+    .header__nav-list{
+        flex-direction: column;
+        position: fixed;
+        inset: 0;
+        background: radial-gradient(circle, rgba(1,13,48,1) 0%, rgba(10,17,59,1) 11%, rgba(1,5,10,0.499124649859944) 100%);
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        transform: translateY(-200%);
+        transition: 1s;
+    }
+    .header__search ul{
+        background: white;
+        padding: 15px;
+        border-radius: 15px;
+        margin-right: 55px;
+    }
+    .header__nav-list a{
+        color: white;
+        font-size: 20px;
+    }
+    .burger:hover ~ .header__nav-list{
+        transform: translateY(0);
+    }
+}
+@media (max-width: 990px) {
+    .header__content .container{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(6, 130px);
+        gap: 30px 24px;
+    }
+    .card:nth-of-type(1){
+        grid-column: span 12;
+        grid-row: span 2;
+        place-content: center;
+    }
+    .card:nth-of-type(2){
+        grid-column: span 12;
+        grid-row: span 2;
+        place-content: center;
+    }
+    .card:nth-of-type(3){
+        grid-column: span 12;
+        grid-row: span 2;
+        place-content: center;
+    }
+}
+@media (max-width: 930px) {
+    .footer .container{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .footer__content1{
+        text-align: center;
+    }
+    .footer .container h3{
+        padding-bottom: 25px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .footer__content2{
+        text-align: center;
+    }
+    .footer .container .text{
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .footer .container h4{
+        text-align: center;
+        font-weight: 700;
+    }
+    .social__media{
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .paragraph{
+        margin: auto;
+    }
+}
+@media (max-width: 565px) {
+    .info2 h2{
+        font-size: 16px;
+    }
+}
+@media (max-width: 530px) {
+    .advices__item h2{
+        font-size: 100%;
+        margin-bottom: 20px;
+    }
+    .advices__item p{
+        font-size: 15px;
+        padding-bottom: 50px;
+    }
+}
